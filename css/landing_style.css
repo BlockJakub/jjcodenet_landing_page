@@ -1,0 +1,115 @@
+/*  Landing page style  */
+body {
+    background-image: url(".././img/particles2.jpg");
+    background-repeat: no-repeat;
+    background-size: calc(60% * 5);
+}
+main.container {
+    background-color: #c9ffe5;
+}
+
+
+
+footer {
+    background-color: #aaf0d1;
+    text-align: center;
+    height: 80px;
+    border-radius: 4px;
+}
+
+
+header.hdr_bg_img {
+    display: block;
+    width: 100%;
+    height: 568px;
+    background-image: url('.././img/particles2.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.lnd_page_ttl {
+    color: #ee5e0a;
+    font-size: 6em;
+    font-weight: 700;
+    text-align: center;
+    padding: 120px;
+    text-shadow: 3px 5px purple;
+    transform: rotate(-13deg);
+}
+
+
+
+
+/*   NAVBAR  */
+/* Style the navbar links */
+.navbar-nav {
+    margin-left: auto;
+}
+nav.navbar {
+    background-color: #aaf0d1;
+    font-weight: 700;
+}
+.navbar-nav .nav-link {
+    color: #333;
+    /* Default text color */
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+/* Hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    background-color: #c9ffe5;
+    /* Change text color on hover */
+}
+
+
+main.container {
+    margin: 2em auto;
+    box-shadow: 7px 7px 4px #aaf0d1;
+}
+
+section.row {
+    margin: 0.2em auto;
+}
+
+.gutter {
+    
+    margin-bottom: 3em;
+    background-color: inherit;
+}
+
+.container > .gallery {
+    
+        display: flex;
+        flex:1 0 20px;
+        flex-wrap: wrap;
+        justify-content: center; /* Adjust as needed */
+        align-items: center; /* Adjust as needed */
+}
+
+.gallery h2 {
+    text-align: center; /* Center-align gallery heading */
+}
+
+.gallery p {
+    text-align: center; /* Center-align gallery description */
+}
+
+
+.gallery img.trans {
+    width: 449px;
+    height: 428px;
+    margin: 5em 1.5em 2em 1.5em;
+    border-radius: 16%;
+    transition: transform 0.3s ease;
+}
+
+.gallery img.trans:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}

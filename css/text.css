@@ -1,0 +1,25 @@
+/*   Style  for all text in the  moje_port.html   */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.header > h1 {
+    font-weight: 800;
+}
+
+div.header.welcome_title {
+
+    font-size: 25px;
+    font-family: 'consolas';
+
+}
+
+div.header>h1 {
+    margin: 1em;
+}
+
+div.header > .subtitle {
+    font-style: italic;
+
+    margin-left: 2em;
+}
+
+

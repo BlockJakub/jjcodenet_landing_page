@@ -1,0 +1,28 @@
+@import url('text.css');
+
+@import url('layout.css');
+
+
+* ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-size: 1.4rem;
+}
+
+body {
+    background-color: #c9ffe5;
+}
+
+
+footer {
+    background-color: #aaf0d1;
+    border-radius: 4px
+}
+
+
+@import url('./media_query_style.css');
