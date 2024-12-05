@@ -1,11 +1,23 @@
 
 /*   MEDIA QUERY FOR MOST SCREENS  */
 
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+@media screen and (max-width: 477px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+/* For mobile phones and tablets: */
+    [class*="col-"] {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 777px) {
+    /* For mobile phones and tablets: */
+        [class*="col-"] {
+            width: 70%;
+        }
+    }
 
 
 .container-flex {

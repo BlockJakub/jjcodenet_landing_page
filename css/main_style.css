@@ -2,6 +2,9 @@
 
 @import url('layout.css');
 
+@import url('landing_style.css');
+
+@import url('media_query_style.css');
 
 * ::before ::after {
     box-sizing: border-box;
@@ -23,6 +26,3 @@ footer {
     background-color: #aaf0d1;
     border-radius: 4px
 }
-
-
-@import url('./media_query_style.css');

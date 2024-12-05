@@ -1,17 +1,17 @@
 /*  Landing page style  */
 body {
-    background-image: url(".././img/particles2.jpg");
-    background-repeat: no-repeat;
-    background-size: calc(60% * 5);
+    background-image: linear-gradient(to right, #f5a209, #18e4ad);
+    background-size: cover;
+    background-position: center;
 }
 main.container {
-    background-color: #c9ffe5;
+    background-image: linear-gradient(to right, #f5a209, #18e4ad);
 }
 
 
 
 footer {
-    background-color: #aaf0d1;
+    background-color: transparent;
     text-align: center;
     height: 80px;
     border-radius: 4px;
@@ -70,7 +70,6 @@ nav.navbar {
 
 main.container {
     margin: 2em auto;
-    box-shadow: 7px 7px 4px #aaf0d1;
 }
 
 section.row {
@@ -81,6 +80,48 @@ section.row {
     
     margin-bottom: 3em;
     background-color: inherit;
+}
+
+
+.scroller{
+    max-width: fit-content;
+    outline: 3px solid lime;
+    font-weight: 900;
+    
+}
+
+
+.scroller-inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.scroller[data-animated="true"]{
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent,white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent,white 20%, white 80%, transparent);    
+}
+.scroller[data-animated="true"] .scroller-inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--animation-duration, 17s) var(--_animation-direction, forwards) linear infinite;
+
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-77% - .5rem));
+    }
 }
 
 .container > .gallery {
@@ -106,10 +147,10 @@ section.row {
     height: 428px;
     margin: 5em 1.5em 2em 1.5em;
     border-radius: 16%;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease-out;
 }
 
 .gallery img.trans:hover {
-transform: scale(1.05);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
